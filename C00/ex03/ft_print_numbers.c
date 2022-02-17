@@ -6,11 +6,11 @@
 /*   By: yeosim <yeosim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/06 10:57:41 by yeosim            #+#    #+#             */
-/*   Updated: 2022/02/06 17:30:03 by yeosim           ###   ########.fr       */
+/*   Updated: 2022/02/09 18:32:32 by yeosim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	<unistd.h>
+#include <unistd.h>
 
 void	ft_print_numbers(void)
 {
@@ -22,10 +22,4 @@ void	ft_print_numbers(void)
 		write(1, &num, 1);
 		num++;
 	}
-}
-
-int	main(void)
-{
-	ft_print_numbers ();
-	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: yeosim <yeosim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/06 18:09:13 by yeosim            #+#    #+#             */
-/*   Updated: 2022/02/07 15:16:58 by yeosim           ###   ########.fr       */
+/*   Updated: 2022/02/09 18:08:55 by yeosim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,12 +36,6 @@ void	ft_print_comb(void)
 		}
 		a++;
 	}
-}
-
-int	main(void)
-{
-	ft_print_comb();
-	return (0);
 }
 
 void	write_all(char a, char b, char c)

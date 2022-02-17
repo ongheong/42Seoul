@@ -6,7 +6,7 @@
 /*   By: yeosim <yeosim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/06 17:32:28 by yeosim            #+#    #+#             */
-/*   Updated: 2022/02/06 18:06:41 by yeosim           ###   ########.fr       */
+/*   Updated: 2022/02/09 18:17:02 by yeosim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,4 @@ void	ft_is_negative(int n)
 	{
 		write (1, &pos, 1);
 	}
-}
-
-int	main(void)
-{
-	ft_is_negative (0);
-	return (0);
 }

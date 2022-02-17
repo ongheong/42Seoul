@@ -6,7 +6,7 @@
 /*   By: yeosim <yeosim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/06 16:50:08 by yeosim            #+#    #+#             */
-/*   Updated: 2022/02/06 17:19:52 by yeosim           ###   ########.fr       */
+/*   Updated: 2022/02/13 18:19:09 by yeosim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,4 @@ void	ft_print_reverse_alphabet(void)
 		write(1, &a, 1);
 		a--;
 	}
-}
-
-int	main(void)
-{
-	ft_print_reverse_alphabet();
-	return (0);
 }

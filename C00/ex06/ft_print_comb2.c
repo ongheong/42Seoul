@@ -6,7 +6,7 @@
 /*   By: yeosim <yeosim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/07 13:41:28 by yeosim            #+#    #+#             */
-/*   Updated: 2022/02/07 21:56:29 by yeosim           ###   ########.fr       */
+/*   Updated: 2022/02/13 18:33:51 by yeosim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,48 +16,38 @@ void	print_ab(int a, int b);
 
 void	ft_print_comb2(void)
 {
-	int a;
-	int b;
-	
+	int	a;
+	int	b;
+
 	a = 0;
 	while (a <= 98)
 	{
 		b = a + 1;
 		while (b <= 99)
 		{
-			while (a < b)
-			{
-				print_ab(a, b);
-				b++;
-				write(1, ",", 1);
-				write(1, " ", 1);
-			}
+			print_ab(a, b);
 			b++;
 		}
 		a++;
 	}			
 }
 
-int main(void)
-{
-	ft_print_comb2();
-	return (0);
-}
-
 void	print_ab(int a, int b)
 {
-	if( a < 10 || b < 10)
-	{
-		write(1, "0", 1);
-		write(1, *&a + '0', 1);
-		write(1, "0", 1);
-		write(1, &b, 1);
-	}
-	else
-	{
-		write(1, &a, 1);
-		write(1, &b, 1);
-	}
-}
+	char	itoc [5];
+	int		i;
 
-//-> 집 가서 디버거 찍어보기
+	itoc[0] = a / 10 + '0';
+	itoc[1] = a % 10 + '0';
+	itoc[2] = ' ';
+	itoc[3] = b / 10 + '0';
+	itoc[4] = b % 10 + '0';
+	i = 0;
+	while (i <= 4)
+	{
+		write(1, &itoc[i], 1);
+		i++;
+	}
+	if (a < 98 && b <= 99)
+		write(1, ", ", 2);
+}
