@@ -1,0 +1,5 @@
+Credentials cache: API:9940EDF0-91BA-4DCB-89CF-96E510A31974
+        Principal: yeosim@42SEOUL.KR
+
+  Issued                Expires               Principal
+Feb  1 15:14:23 2022  Feb  2 01:14:23 2022  krbtgt/42SEOUL.KR@42SEOUL.KR
